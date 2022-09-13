@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semana03_2022_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usando POO en Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc1-qo-PoV">
+                                <rect key="frame" x="20" y="74" width="350" height="36"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nW-lY-nCL">
+                                <rect key="frame" x="20" y="140" width="350" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iol-CC-Tga">
+                                <rect key="frame" x="20" y="192" width="350" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-8F-lWU">
+                                <rect key="frame" x="20" y="244" width="350" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="low-eJ-aGc">
+                                <rect key="frame" x="20" y="296" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGF-1u-MyT">
+                                <rect key="frame" x="20" y="347" width="350" height="38"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Nuevo Carro">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapNewCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rhG-oi-wmb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-2u-7sn">
+                                <rect key="frame" x="20" y="415" width="350" height="38"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Acelerar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapAccelerate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNw-iJ-xf3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhl-QQ-jBn">
+                                <rect key="frame" x="20" y="483" width="350" height="38"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Desacelerar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapSlowDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Su5-Rj-GC1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-Pl-c4O">
+                                <rect key="frame" x="20" y="551" width="350" height="38"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Detener">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbm-cK-UYc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kindpng_1813878.png" translatesAutoresizingMaskIntoConstraints="NO" id="d8s-34-ply">
+                                <rect key="frame" x="20" y="619" width="350" height="192"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="v4f-8F-lWU" firstAttribute="top" secondItem="iol-CC-Tga" secondAttribute="bottom" constant="30" id="3Xc-2u-5Vx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4nW-lY-nCL" secondAttribute="trailing" constant="20" id="3pc-kv-N0r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="low-eJ-aGc" secondAttribute="trailing" constant="20" id="5ba-UX-99p"/>
+                            <constraint firstItem="7W5-2u-7sn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Ct-Mv-53b"/>
+                            <constraint firstItem="Jc1-qo-PoV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EpL-wf-QRj"/>
+                            <constraint firstItem="iol-CC-Tga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FQq-Ft-t6m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tdd-Pl-c4O" secondAttribute="trailing" constant="20" id="H83-gY-yn8"/>
+                            <constraint firstItem="Jc1-qo-PoV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="HIW-GX-qCa"/>
+                            <constraint firstItem="d8s-34-ply" firstAttribute="top" secondItem="tdd-Pl-c4O" secondAttribute="bottom" constant="30" id="JRL-qZ-mZ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v4f-8F-lWU" secondAttribute="trailing" constant="20" id="K0O-MQ-Mru"/>
+                            <constraint firstItem="4nW-lY-nCL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KcU-54-UgB"/>
+                            <constraint firstItem="tdd-Pl-c4O" firstAttribute="top" secondItem="Yhl-QQ-jBn" secondAttribute="bottom" constant="30" id="LDt-2U-mPo"/>
+                            <constraint firstItem="Yhl-QQ-jBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OOz-3c-r9G"/>
+                            <constraint firstItem="iol-CC-Tga" firstAttribute="top" secondItem="4nW-lY-nCL" secondAttribute="bottom" constant="30" id="Pdd-1U-fHw"/>
+                            <constraint firstItem="low-eJ-aGc" firstAttribute="top" secondItem="v4f-8F-lWU" secondAttribute="bottom" constant="30" id="RXZ-Q7-LHu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yhl-QQ-jBn" secondAttribute="trailing" constant="20" id="TZS-sz-Q1c"/>
+                            <constraint firstItem="tdd-Pl-c4O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UWG-e2-ovh"/>
+                            <constraint firstItem="7W5-2u-7sn" firstAttribute="top" secondItem="hGF-1u-MyT" secondAttribute="bottom" constant="30" id="UeH-li-1Ld"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yhl-QQ-jBn" secondAttribute="trailing" constant="20" id="VBN-Ow-7BV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jc1-qo-PoV" secondAttribute="trailing" constant="20" id="e7E-qY-DBu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iol-CC-Tga" secondAttribute="trailing" constant="20" id="ilW-Wv-nSP"/>
+                            <constraint firstItem="Yhl-QQ-jBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kbG-8K-maa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGF-1u-MyT" secondAttribute="trailing" constant="20" id="kmX-UX-Anz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d8s-34-ply" secondAttribute="trailing" constant="20" id="lRx-Ds-TbY"/>
+                            <constraint firstItem="low-eJ-aGc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mTZ-xP-S2i"/>
+                            <constraint firstItem="hGF-1u-MyT" firstAttribute="top" secondItem="low-eJ-aGc" secondAttribute="bottom" constant="30" id="npi-IP-uin"/>
+                            <constraint firstItem="4nW-lY-nCL" firstAttribute="top" secondItem="Jc1-qo-PoV" secondAttribute="bottom" constant="30" id="nqS-fv-ptm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7W5-2u-7sn" secondAttribute="trailing" constant="20" id="rMV-S4-XEF"/>
+                            <constraint firstItem="v4f-8F-lWU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rWo-F8-rue"/>
+                            <constraint firstItem="Jc1-qo-PoV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="syA-pn-2Kd"/>
+                            <constraint firstItem="Yhl-QQ-jBn" firstAttribute="top" secondItem="7W5-2u-7sn" secondAttribute="bottom" constant="30" id="vHF-Dd-2kc"/>
+                            <constraint firstItem="d8s-34-ply" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wu1-wr-eRy"/>
+                            <constraint firstItem="hGF-1u-MyT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zAC-oK-pLT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblBrand" destination="4nW-lY-nCL" id="zZs-jL-qY0"/>
+                        <outlet property="lblColor" destination="v4f-8F-lWU" id="EMw-0g-Tp3"/>
+                        <outlet property="lblModel" destination="iol-CC-Tga" id="5IB-pF-sm0"/>
+                        <outlet property="lblSpeed" destination="low-eJ-aGc" id="QKL-b1-pcK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kindpng_1813878.png" width="550" height="192"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
